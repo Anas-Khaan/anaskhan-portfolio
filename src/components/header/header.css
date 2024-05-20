@@ -1,0 +1,24 @@
+/* animation - items in navbar i.e Home, about etc */
+.animation{
+  transition: all 0.3s ease;
+}
+.animation:hover {
+  transform: scale(1.1);
+}
+
+.svg-container {
+    display: inline-block;
+    cursor: pointer; /* Change cursor on hover */
+    transition: transform 0.3s ease; /* Add transition for smoother effect */
+  }
+  
+  .svg-container:hover {
+    transform: scale(1.2); /* Scale up on hover */
+    /* outline: none; */
+  }
+
+  @media (min-width:1024px){
+    .navbar-brand{
+      margin-left: 9pc !important;
+    }
+  }

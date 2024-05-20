@@ -1,0 +1,145 @@
+.fluid-container{
+    height: 40pc;
+    
+}
+
+ /* Section Divider styling */
+    .section-divider-mobile {
+        margin-bottom: 60px;
+        border-top: 1px solid rgb(81, 81, 81);
+    }
+
+    .section-divider {
+        margin-left: 10pc !important;
+        border-top: 5px solid rgb(186, 189, 191);
+        margin: 10px 0;
+        width: 5pc;
+    }
+/* Section Divider styling */
+
+
+
+/* intro section styling   */
+    .intro {
+        padding:10px;
+        line-height: 30px;
+    }
+
+        /* Button Styling */
+        .btn-dark {
+            width: 140px;
+            padding: 10px 10px !important;
+            font-size: 18px !important;
+            font-family: 'Raleway',Helvetica,Arial,Lucida,sans-serif !important;
+            color:#000000 !important;
+            background-color: hsl(0, 0%, 100%) !important;
+            border: none;
+            border-radius:5px;
+            transition: all 0.3s ease;  /* Smooth transition for the button */
+        }
+
+        .btn-light{
+            width: 140px;
+            padding: 10px 10px !important;
+            font-size: 18px !important;
+            font-family: 'Raleway',Helvetica,Arial,Lucida,sans-serif !important;
+            color:#ffffff !important;
+            background-color: #0f0e1e !important;
+            border-radius: 5px;
+            border: none;
+            transition: all 0.3s ease;
+        }
+        /* arrow icon in button "Lets connect" */
+        .icon {
+            display: inline-block;
+            opacity: 0;
+            margin-left: -10px;
+            transition: all 0.3s ease; /* Smooth transition for the icon */
+            transform: translateX(0); /* Initial position */
+        }
+
+        .btn-dark:hover .icon {
+        opacity: 1;
+        transform: translateX(10px); /* Move to the right by 10px */
+        }
+
+        .btn-light:hover .icon {
+            opacity: 1;
+            transform: translateX(10px); /* Move to the right by 10px */
+        }
+
+        .btn-dark:hover {
+            transform: scale(1.06); 
+        }
+
+        .btn-light:hover {
+            transform: scale(1.06); 
+        }
+        /* image styling */
+        .image-div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+        }
+        .image-dark {
+            background-color: #374151 !important;
+            border:#ffffff 2px solid;
+            width: 15pc;
+            border-radius: 999px;
+
+        }
+
+        .image-light {
+            background-color: #e2e2e2 !important;
+            border:#5f5f5f 2px solid;
+            width: 15pc;
+            border-radius: 999px;
+
+        }
+/* intro section styling */
+
+
+
+/* Technologies Section styling  */
+    .technologies{
+        text-align: center;
+    }
+/* Technologies Section styling  */  
+
+
+
+/* Certificaiton section styling  */
+.certifications {
+    text-align: center;
+}
+
+
+    .certifications a {
+        text-decoration: none;
+        color:inherit;
+    }
+
+
+ 
+/* stlying of different section - for large screens   */
+@media (min-width: 992px) {
+      .intro {
+        padding-left: 100px !important;
+        padding-right: 50px !important;
+      }
+      .image {
+        width: 350px;
+      }
+      .common-styling{
+        text-align: start;
+        margin-left: 10pc;
+        margin-top: 2pc;
+      }
+      
+    }
+    
+  
+  
+
+  

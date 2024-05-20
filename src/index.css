@@ -1,0 +1,21 @@
+.dark-theme {
+  background-color: #0f0e1e;
+  margin: 0;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.light-theme {
+  background-color: #e7e7e7;
+  margin: 0;
+ 
+    color:#0f0e1e;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
