@@ -1,3 +1,11 @@
+.navbar-dark{
+  border-bottom: 2px solid #e7e7e7;
+}
+
+.navbar-light{
+  border-bottom: 2px solid #0f0e1e;
+}
+
 /* animation - items in navbar i.e Home, about etc */
 .animation{
   transition: all 0.3s ease;

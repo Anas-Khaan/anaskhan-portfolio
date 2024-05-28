@@ -17,7 +17,7 @@ export default function home(props) {
                             <h2 className="fw-lighter">Self-taught Computer Science enthusiast.</h2>
                             <p >With a passion for solving complex problems, I believe that coding is easy; the challenge lies in making effective solutions.</p>
                             <button className={`btn-${props.theme}`}>
-                                <a href="mailto:youremail@example.com" className='fw-lighter' style={{ textDecoration: 'none', color: 'inherit' }}>
+                                <a href="mailto:anaskhangiki@gmail.com" className='fw-lighter' style={{ textDecoration: 'none', color: 'inherit' }}>
                                     Let's Connect <span className='icon'>&gt;</span>
                                 </a>
                             </button>

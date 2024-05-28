@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import "./header.css";
 
 export default function Header(props) {
@@ -11,7 +12,7 @@ export default function Header(props) {
 
     return (
         <>
-            <nav className={`navbar navbar-expand-lg navbar-${props.theme} bg-transparent mt-lg-2 text-align-center`}>
+            <nav className={`navbar navbar-${props.theme} navbar-expand-lg navbar-${props.theme} bg-transparent mt-lg-2 pb-lg-3 text-align-center`}>
                 <div className="container-fluid">
                     <a className="navbar-brand ms-2 fs-3" href="/">Anas Khan</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,20 +21,20 @@ export default function Header(props) {
                     <div className="collapse navbar-collapse ms-lg-5" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item ms-lg-4 animation">
-                                <a className="nav-link active" aria-current="page" href="/">Home</a>
+                                <NavLink className="nav-link" to="/" end>Home</NavLink>
                             </li>
                             <li className="nav-item ms-lg-4 animation">
-                                <a className="nav-link" href="/">Projects</a>
+                                <NavLink className="nav-link" to="/project">Projects</NavLink>
                             </li>
                             <li className="nav-item ms-lg-4 animation">
-                                <a className="nav-link" href="/">Blog</a>
+                                <NavLink className="nav-link" to="/blog">Blog</NavLink>
                             </li>
                             <li className="nav-item ms-lg-4 animation">
-                                <a className="nav-link" href="#about">About</a>
+                                <NavLink className="nav-link" to="/about">About</NavLink>
                             </li>
-                            <li className="nav-item ms-lg-4 animation">
-                                <a className="nav-link" href="/">Contact</a>
-                            </li>
+                            {/* <li className="nav-item ms-lg-4 animation">
+                                <NavLink className="nav-link" to="/">Contact</NavLink>
+                            </li> */}
                         </ul>
                    
                     <div className="me-lg-5">
@@ -47,7 +48,7 @@ export default function Header(props) {
                         </a>
 
                         {/* Github Icon  */}
-                        <a href="/" className="svg-container ms-3">
+                        <a href="https://github.com/anas-khaan" target='_blank' rel='noopener noreferrer' className="svg-container ms-3">
                             <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill={icon} viewBox="0 0 24 24">
 
                                 <path fill-rule="evenodd" d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z" clip-rule="evenodd" />
@@ -55,7 +56,7 @@ export default function Header(props) {
                         </a>
 
                         {/* Hashnode Icon  */}
-                        <a href="/" className="svg-container ms-3">
+                        <a href="https://hashnode.com/@anaskhan1" target='_blank' rel='noopener noreferrer' className="svg-container ms-3">
                             <svg width="30px" height="30px" viewBox="-15.36 -15.36 286.72 286.72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" fill="#000000" stroke="#000000" strokeWidth="7.936">
                                 <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                                 <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" stroke="#CCCCCC" strokeWidth="6.656000000000001"></g>
@@ -68,7 +69,7 @@ export default function Header(props) {
                         </a>
 
                         {/* Linkedin Icon  */}
-                        <a href="/" className="svg-container ms-3">
+                        <a href="https://linkedin.com/in/anas-khaan" target='_blank' rel='noopener noreferrer' className="svg-container ms-3">
                             <svg stroke="currentColor" fill={icon} strokeWidth="0" viewBox="0 0 1024 1024" height="30px" width="30px" xmlns="http://www.w3.org/2000/svg">
                                 <path fill={icon} d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zM349.3 793.7H230.6V411.9h118.7v381.8zm-59.3-434a68.8 68.8 0 1 1 68.8-68.8c-.1 38-30.9 68.8-68.8 68.8zm503.7 434H675.1V608c0-44.3-.8-101.2-61.7-101.2-61.7 0-71.2 48.2-71.2 98v188.9H423.7V411.9h113.8v52.2h1.6c15.8-30 54.5-61.7 112.3-61.7 120.2 0 142.3 79.1 142.3 181.9v209.4z"></path>
                             </svg>
